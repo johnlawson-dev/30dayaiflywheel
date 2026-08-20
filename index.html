@@ -59,10 +59,8 @@
         
         .book-image {
             width: 100%;
-            max-width: 350px;
+            max-width: 420px;
             height: auto;
-            border-radius: 5px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
         }
         
@@ -178,8 +176,8 @@
         <main>
             <div class="book-content">
                 <div class="book-cover">
-                    <!-- Placeholder cover. To use a real one: drop the file in assets/ and change the src below to assets/cover.jpg -->
-                    <img src="assets/cover.svg" alt="30 Day AI Flywheel Book Cover" class="book-image">
+                    <!-- Book render. The image carries its own shadow and white ground, so .book-image adds none. -->
+                    <img src="assets/30-day-ai-fly-wheel-book.png" alt="30 Day AI Flywheel by John Lawson, hardback edition" class="book-image" width="1029" height="1528">
                 </div>
                 
                 <div class="book-details">
