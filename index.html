@@ -234,18 +234,37 @@
             text-decoration: underline;
         }
         
-        .author {
-            text-align: center;
-            margin: 40px 0;
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 34px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 38px 40px;
+            margin: 60px 0;
         }
         
-        .author img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+        .about-photo {
+            width: 190px;
+            height: 190px;
             object-fit: cover;
-            margin-bottom: 20px;
-            border: 4px solid #f1f1f1;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 260px;
+        }
+        
+        .about-text h2 {
+            color: #2c3e50;
+            margin-bottom: 14px;
+        }
+        
+        .about-text p {
+            color: #555555;
         }
         
         footer {
@@ -370,12 +389,13 @@
                 <p class="reviews-more"><a href="https://www.amazon.co.uk/portal/customer-reviews/B0FQW4NHQG/ref=cm_cr_dp_d_show_all_top?_encoding=UTF8&amp;ie=UTF8&amp;reviewerType=all_reviews" target="_blank" rel="noopener">Read all reviews on Amazon</a></p>
             </section>
             
-            <div class="author">
-                <h2>About the Author</h2>
-                <!-- Placeholder avatar. To use a real photo: drop the file in assets/ and change the src below to assets/author.jpg -->
-                <img src="assets/author.svg" alt="Author Photo">
-                <p>John Lawson writes for business leaders and managers who need AI to deliver measurable results rather than headlines. 30 Day AI Flywheel is his practical system for embedding AI into the way a business grows.</p>
-            </div>
+            <section class="about">
+                <img src="assets/john-lawson.webp" alt="John Lawson" class="about-photo" width="200" height="200">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>John has spent over a decade in enterprise digital marketing, working across SEO, technology teams and large scale delivery. He is now using that experience to build AI automation systems that can multiply operational capacity, getting more done faster, while maintaining human control and accountability.</p>
+                </div>
+            </section>
         </main>
         
         <footer>
